@@ -1,7 +1,7 @@
 # Dynamic ZendFramework Routing via repository API
 
 These examples show how to configure a custom route type to read from a repository 
-service (whic is array-backed for simplicity) and route to a custom controller that
+service (which is array-backed for simplicity) and route to a custom controller that
 receives an already hydrated entity as a request parameter.
 
 ## Installation:
