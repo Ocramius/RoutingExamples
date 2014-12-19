@@ -1,0 +1,18 @@
+{
+    "name": "ocramius/routing-examples",
+    "description": "Dynamic ZendFramework Routing via repository API (example code)",
+    "license": "MIT",
+    "homepage": "https://ocramius.github.io/",
+    "require": {
+        "php":                               "~5.5",
+        "zendframework/zend-http":           "~2.3",
+        "zendframework/zend-servicemanager": "~2.3",
+        "zendframework/zend-modulemanager":  "~2.3",
+        "zendframework/zend-mvc":            "~2.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "RoutingExamples": "src"
+        }
+    }
+}
