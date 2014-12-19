@@ -10,4 +10,6 @@ receives an already hydrated entity as a request parameter.
  2. configure composer autoloading by adding `{"autoload":{"psr-0":{"RoutingExamples":"module/RoutingExamples/src"}}}`
  3. run `composer dump-autoload`
  4. add `"RoutingExamples"` to the `"modules"` key in `config/application.config.php`.
-
+ 5. start a web server via `php -S localhost:8080 -t public`
+ 6. browse to `http://localhost:8080/`, then `http://localhost:8080/home`, 
+    then `http://localhost:8080/contacts` and then `http://localhost:8080/team`
