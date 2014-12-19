@@ -6,10 +6,24 @@ receives an already hydrated entity as a request parameter.
 
 ## Installation:
 
- 1. clone this gist into a local directory into ZF app's `module` directory
- 2. configure composer autoloading by adding `{"autoload":{"psr-0":{"RoutingExamples":"module/RoutingExamples/src"}}}`
- 3. run `composer dump-autoload`
- 4. add `"RoutingExamples"` to the `"modules"` key in `config/application.config.php`.
- 5. start a web server via `php -S localhost:8080 -t public`
- 6. browse to `http://localhost:8080/`, then `http://localhost:8080/home`, 
+ 1. add following to your `composer.json`:
+ 
+    ```json
+    {
+        "repositories": [
+            {
+                "url": "https://github.com/Ocramius/RoutingExamples.git",
+                "type": "git"
+            }
+        ],
+        "require": {
+            "ocramius/routing-examples": "dev-master"
+        }
+    }
+    ```
+ 
+ 2. run `composer update`
+ 3. add `"RoutingExamples"` to the `"modules"` key in `config/application.config.php`.
+ 4. start a web server via `php -S localhost:8080 -t public`
+ 5. browse to `http://localhost:8080/`, then `http://localhost:8080/home`, 
     then `http://localhost:8080/contacts` and then `http://localhost:8080/team`
