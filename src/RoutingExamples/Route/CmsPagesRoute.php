@@ -41,7 +41,7 @@ class CmsPagesRoute implements RouteInterface
 
         $pageUrl = substr($request->getUri()->getPath(), $pathOffset);
 
-        if (! isset($pageUrl[0]) && $pageUrl[0] === '/') {
+        if (! isset($pageUrl[0]) || $pageUrl[0] === '/') {
             return;
         }
 
